@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=ChaineCryptee
+comment0.text=\n\ D\u00E9crivez\ votre\ classe\ ChaineCryptee\ ici.\n\ Cette\ classe\ permet\ de\ chiffrer/d\u00E9chiffrer\ une\ chaine\ de\ carract\u00E8re\ utilisant\ une\ m\u00E9thode\ de\ d\u00E9calage.\n\ @author\ (Jean\ Destribois)\n\ @version\ (16/02/2018)\n
+comment1.params=ChaineDeCaractere\ DecalageDesLettres
+comment1.target=ChaineCryptee(java.lang.String,\ int)
+comment1.text=\n\ Constructeur\ d'objets\ de\ classe\ ChaineCryptee\n
+comment2.params=
+comment2.target=java.lang.String\ decrypte()
+comment2.text=\n\ M\u00E9thode\ permettant\ de\ d\u00E9chiffrer\ une\ chaine\ de\ caract\u00E8re\n
+comment3.params=
+comment3.target=java.lang.String\ cypte()
+comment3.text=\n\ M\u00E9thode\ permettant\ de\ chiffrer\ une\ chaine\ de\ caract\u00E8re\n
+comment4.params=c\ decalage
+comment4.target=char\ decaleCaractere(char,\ int)
+numComments=5
