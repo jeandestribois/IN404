@@ -10,46 +10,49 @@ public class ChaineCryptee
 {
     private String chaine;
     private int decalage;
-
+    
     /**
      * Constructeur d'objets de classe ChaineCryptee
      */
-    public ChaineCryptee(String ChaineDeCaractere, int DecalageDesLettres)
+    private ChaineCryptee(String ChaineDeCaractere, int DecalageDesLettres)
     {
-        chaine=ChaineDeCaractere;
-        decalage=DecalageDesLettres;
+        this.chaine=ChaineDeCaractere;
+        this.decalage=DecalageDesLettres;
     }
-
+    
+    public static ChaineCryptee deEnClair(String C, int d)
+    {
+        return new ChaineCryptee(C,d);
+    }
+    
+    public static ChaineCryptee deCrypt(String C, int d)
+    {
+        ChaineCryptee CC=new ChaineCryptee(C,d);
+        CC.chiffre();
+        return CC;
+    }
+    
     /**
      * Méthode permettant de déchiffrer une chaine de caractère
      */
-    public String decrypte()
+    public String dechiffre()
     {
-        if(chaine==null) return "null";
-        String chainebis="";
-        for(int i=0; i<chaine.length(); i++)
-        {
-            char a;
-            a=decaleCaractere(chaine.charAt(i),decalage);
-            chainebis=chainebis + a;
-        }
-        return chainebis;
+        return chaine;
     }
     
     /**
      * Méthode permettant de chiffrer une chaine de caractère
      */
-    public String cypte()
+    public String chiffre()
     {
         if(chaine==null) return "null";
-        String chainebis="";
+        String chainecryptee="";
         for(int i=0; i<chaine.length(); i++)
         {
-            char a;
-            a=decaleCaractere(chaine.charAt(i),-decalage);
-            chainebis=chainebis + a;
+            chainecryptee+=decaleCaractere(chaine.charAt(i),decalage);
         }
-        return chainebis;
+        chaine=chainecryptee;
+        return chainecryptee;
     }
     
     private static char decaleCaractere(char c, int decalage)
