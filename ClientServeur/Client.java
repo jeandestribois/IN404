@@ -1,13 +1,9 @@
+import java.util.ArrayList;
 
-/**
- * Décrivez votre classe Client ici.
- * Classe implémentant un client.
- * @author (Jean Destribois)
- * @version (16/02/2018)
- */
 public class Client
 {
     private String nom;
+    private Serveur serveur;
     
     /**
      * Constructeur d'objets de classe Client
@@ -15,13 +11,26 @@ public class Client
     public Client(String nom)
     {
         this.nom = nom;
+        this.serveur = new Serveur();
     }
     /**
      * Méthode permettant de connecter le client au serveur
      */
-    public bool seConnecter(Serveur serveur)
+    public boolean seConnecter(Serveur serveur)
     {
+        serveur.connecter(this);
+        this.serveur=serveur;
+        return true;
+    }
     
+    public void envoyerMessage(String message)
+    {
+        this.serveur.diffuserMessage(message);
+    }
+    
+    public void recevoirMessage(String message)
+    {
+        System.out.println(this.nom + " a reçu " + message);
     }
     
 }

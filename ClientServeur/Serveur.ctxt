@@ -1,10 +1,9 @@
 #BlueJ class context
 comment0.target=Serveur
-comment0.text=\n\ D\u00E9crivez\ votre\ classe\ Serveur\ ici.\n\n\ @author\ (votre\ nom)\n\ @version\ (un\ num\u00E9ro\ de\ version\ ou\ une\ date)\n
 comment1.params=
 comment1.target=Serveur()
-comment1.text=\n\ Constructeur\ d'objets\ de\ classe\ Serveur\n
-comment2.params=y
-comment2.target=int\ sampleMethod(int)
-comment2.text=\n\ Un\ exemple\ de\ m\u00E9thode\ -\ remplacez\ ce\ commentaire\ par\ le\ v\u00F4tre\n\n\ @param\ \ y\ \ \ le\ param\u00E8tre\ de\ la\ m\u00E9thode\n\ @return\ \ \ \ \ la\ somme\ de\ x\ et\ de\ y\n
-numComments=3
+comment2.params=client
+comment2.target=boolean\ connecter(Client)
+comment3.params=message
+comment3.target=void\ diffuserMessage(java.lang.String)
+numComments=4

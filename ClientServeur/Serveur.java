@@ -1,33 +1,25 @@
+import java.util.ArrayList;
 
-/**
- * Décrivez votre classe Serveur ici.
- *
- * @author (votre nom)
- * @version (un numéro de version ou une date)
- */
 public class Serveur
 {
-    // variables d'instance - remplacez l'exemple qui suit par le vôtre
-    private int x;
-
-    /**
-     * Constructeur d'objets de classe Serveur
-     */
+    private ArrayList<Client> listeClient;
+    
     public Serveur()
     {
-        // initialisation des variables d'instance
-        x = 0;
+        this.listeClient=new ArrayList();
     }
-
-    /**
-     * Un exemple de méthode - remplacez ce commentaire par le vôtre
-     *
-     * @param  y   le paramètre de la méthode
-     * @return     la somme de x et de y
-     */
-    public int sampleMethod(int y)
+    
+    public boolean connecter(Client client)
     {
-        // Insérez votre code ici
-        return x + y;
+       this.listeClient.add(client);
+       return true;
+    }
+    
+    public void diffuserMessage(String message)
+    {
+        for(int i=0; i<this.listeClient.size(); i++)
+        {
+            this.listeClient.get(i).recevoirMessage(message);
+        }
     }
 }
