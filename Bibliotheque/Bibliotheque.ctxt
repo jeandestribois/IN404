@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Bibliotheque
+comment1.params=
+comment1.target=Bibliotheque()
+comment2.params=document
+comment2.target=void\ ajouteDocBiblio(Document)
+comment3.params=document
+comment3.target=void\ afficheDocument(Document)
+comment4.params=titre
+comment4.target=boolean\ rechercheTitreDocument(java.lang.String)
+comment5.params=titre
+comment5.target=boolean\ rechercheDocCitant(java.lang.String)
+numComments=6
