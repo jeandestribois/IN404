@@ -1,20 +1,13 @@
+import java.util.ArrayList;
 
-/**
- * Décrivez votre classe Document ici.
- *
- * @author (votre nom)
- * @version (un numéro de version ou une date)
- */
 public class Document
 {
-    // variables d'instance - remplacez l'exemple qui suit par le vôtre
-    private int x;
+    private ArrayList<CD> listeCD;
+    private ArrayList<DVD> listeDVD;
+    private String type;
 
-    /**
-     * Constructeur d'objets de classe Document
-     */
-    public Document()
+    public Document(String type)
     {
-        
+       this.type=type;
     }
 }
