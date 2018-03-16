@@ -1,3 +1,6 @@
+package in404.exo61.client;
+
+import in404.exo61.serveur.Serveur;
 import java.util.ArrayList;
 
 public class Client

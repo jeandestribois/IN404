@@ -1,3 +1,5 @@
+package in404.clientserveur
+
 import java.util.ArrayList;
 
 public class Serveur
