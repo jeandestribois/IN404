@@ -1,0 +1,9 @@
+window_sizes 1933 1228 483 1444 999 160
+cleanlooks_style
+show_stereotypes
+selected 
+package_ref 129 // diagrame de class
+open
+  classview_ref 128111 // main
+end
+end
